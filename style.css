@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	/* changes the 1REM from 16px to 10px */
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Montserrat", sans-serif;
+	height: 100vh;
+	background-color: #f4f4f4;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	padding: 1rem;
+}
+
+.testimonial-container {
+	background-color: #476ce4;
+	color: #fff;
+	border-radius: 15px;
+	margin: 20px auto;
+	padding: 5rem 8rem 2rem;
+	max-width: 76.8rem;
+	position: relative;
+}
+
+.fa-quote {
+	color: rgba(255, 255, 255, 0.3);
+	font-size: 2.8rem;
+	position: absolute;
+	top: 4rem;
+}
+
+.fa-quote-right {
+	left: 4rem;
+}
+
+.fa-quote-left {
+	right: 4rem;
+}
+
+.testimonial-text {
+	text-align: justify;
+	line-height: 28px;
+	font-size: 1.4rem;
+}
+
+.user {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin: 2rem 0;
+}
+
+.user-image {
+	width: 7rem;
+	height: 7rem;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.user-details {
+	margin-left: 1.2rem;
+	font-size: 1.4rem;
+}
+
+.user-details h4 {
+	font-weight: normal;
+	line-height: 2.6rem;
+}
+
+.progress-bar {
+	width: 100%;
+	height: 4px;
+	background-color: #fff;
+	margin-bottom: 1rem;
+	transform-origin: left;
+	animation: loader 5s infinite linear;
+}
+
+@keyframes loader {
+	0% {
+		transform: scaleX(0);
+	}
+}
+
+@media (max-width: 32em) {
+	.testimonial-container {
+		padding: 4rem 2rem 1rem;
+	}
+
+	.fa-quote {
+		display: none;
+	}
+
+	.testimonial-text {
+		font-size: 1.2rem;
+	}
+
+	.user-image {
+		width: 6rem;
+		height: 6rem;
+	}
+}
